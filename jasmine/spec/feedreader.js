@@ -57,12 +57,13 @@ $(function() {
             expect(body.classList.contains('menu-hidden')).toBe(true);
         });
      });
-
+ 
     describe('Initial Entries', function() {
         /* Test that ensures when the loadFeed function
          * is called and completes its work, there is at least
          * a single .entry element within the .feed container. */
-         
+ 
+        //Read Matthew Cranford's blog to understand this async test, but did all work on my own         
         beforeEach(function(done) {
             loadFeed(0, done);
             });
